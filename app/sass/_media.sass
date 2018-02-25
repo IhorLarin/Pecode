@@ -1,0 +1,102 @@
+@media screen and (max-width: 991px)
+  .wrapper
+    padding: 0 15px
+
+  .header
+    background-size: cover
+    height: auto
+
+  .menu-btn
+    display: block
+
+  .menu
+    position: fixed
+    top: -100vh
+    left: 0
+    width: 100%
+    z-index: 9
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    height: 100vh
+    background: #fff
+    transition: .3
+    &.active
+      top: 0
+    &__item
+      margin: 0
+    &__link
+      color: $main-color
+      text-align: center
+      padding: 10px 20px
+
+
+  .h-container
+    flex-direction: column
+    transform: translateY(0)
+    //padding-top: 10%
+    padding: 50px 0
+    &__form
+      margin-right: 0
+      padding: 40px
+      order: 1
+      background: #fff
+      box-shadow: 0 0 10px 1px rgba(0, 0, 0, .3)
+      .btn
+        width: 100%
+    &__logo
+      width: auto
+      margin-bottom: 50px
+
+
+  .main-content
+    background-size: auto
+    background-position: left 10%
+
+  .requirement
+    margin: 50px 0
+    &-top
+      position: relative
+      top: 0
+      left: 0
+      width: 300px
+      padding: 40px 20px
+      margin: 0 auto 60px auto
+    &-content
+      display: block
+      &__item
+        margin: 30px 15px
+        &:nth-child(2)
+          transform: translateY(0)
+
+  .offer
+    background: #fff
+    .section-content__item
+      margin: 40px
+
+  .contacts
+    padding-bottom: 80px
+    .section-title
+      margin-bottom: 25px
+    .section-content
+      justify-content: center
+    .touch
+      order: 1
+      margin-top: 25px
+      &__title
+        text-align: center
+      .social
+        justify-content: center
+        &__link
+          margin: 0 15px
+    .h-container__form
+      box-shadow: none
+
+  .map
+    height: 100vh
+
+  .footer
+    .section-title
+      padding: 5px
+      font-size: 18px
